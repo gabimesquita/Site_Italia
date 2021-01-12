@@ -1,0 +1,188 @@
+body{
+    background-color:rgba(30, 112, 57, 0.603);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px; 
+    text-align: justify; 
+    align-items: center;    
+}
+
+header{
+    background: url(bg.jpg);
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;
+    border:1px solid black;   
+    
+}
+
+button#mapas{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    background-color: rgb(212, 18, 18);
+    border-radius: 8px;
+    padding: 5px 5px 5px 5px;
+    margin-left: 5px;
+    
+}
+
+button#mapas:hover{
+    cursor: pointer;
+    background-color: rgba(18, 112, 41, 0.993);
+
+}
+
+h1{
+    color: white;              
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase;
+    font-size: 50px;
+    font-style: bold;
+    text-shadow: 25px 25px 25px 25px white;
+    text-align: center;
+    animation-duration: 5s;
+    animation-name: fade;          
+    border: 1px solid black;
+    background-color: rgba(43, 63, 51, 0.774);
+    
+}
+
+div#flag{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;  
+    animation-duration: 3s;
+    animation-name: slidein;    
+          
+}
+
+h2{
+    font-style: bold;
+}
+
+div#menu{    
+    display: flex;
+    justify-content: space-evenly; 
+    margin-top: 60px; 
+    margin-bottom: 40px;    
+   
+}
+
+button#info{
+    color:white;
+    background-color: rgb(4, 39, 194);
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    display: grid;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt;
+    text-align: center; 
+    height: 300px;
+    width: 250px;
+    margin-bottom: 30px;  
+    animation-duration: 2s;
+    animation-name: slidein;        
+}
+
+button#info:hover{
+    cursor: pointer;
+    background-color: rgba(224, 94, 19, 0.993);
+}
+
+button#food{
+    color:white;
+    background-color: rgb(4, 39, 194);
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    display: grid; 
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt;
+    text-align: center; 
+    height: 300px;
+    width: 250px;
+    margin-bottom: 30px;   
+    animation-duration: 2s;
+    animation-name: slidein;       
+}
+
+button#food:hover{
+    cursor: pointer;
+    background-color: rgba(224, 94, 19, 0.993); 
+}
+
+button#cult{
+    color:white;
+    background-color:rgb(4, 39, 194);  
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    display: grid; 
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt;
+    text-align: center; 
+    height: 300px;
+    width: 250px;
+    margin-bottom: 30px;    
+    animation-duration: 2s;
+    animation-name: slidein;      
+}
+
+button#cult:hover{
+    cursor: pointer;
+    background-color: rgba(224, 94, 19, 0.993);  
+}
+
+button#poleco{
+    color:white;
+    background-color: rgb(4, 39, 194);
+    box-shadow: 1px 1px 1px 1px black;
+    border-radius: 10px;
+    display: grid; 
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25pt;
+    text-align: center; 
+    height: 300px;
+    width: 250px;
+    margin-bottom: 30px;    
+    animation-duration: 2s;
+    animation-name: slidein;      
+}
+
+button#poleco:hover{
+    cursor: pointer;
+    background-color: rgba(224, 94, 19, 0.993);
+}
+
+footer{
+    text-align: center; 
+    font-family: 'Montserrat', sans-serif;
+}
+
+div#som{
+    background-color:rgba(43, 63, 51, 0.568);
+    padding: 10px 10px 10px 10px;
+    display: inline-block;
+    border-radius: 8px;
+    border:1px solid black;   
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 10%
+      }
+      to {
+        margin-right: 10%;
+        width: 100%;
+      }
+  }
+
+  @keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }

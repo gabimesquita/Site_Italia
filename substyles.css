@@ -1,0 +1,112 @@
+body{
+    background-color:rgba(12, 133, 77, 0.589);
+    text-align: justify;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+       
+}
+
+hr{
+    border: 1px solid rgb(6, 59, 17);
+}
+
+p{
+    text-indent: 27pt;
+}
+
+button#inicio{
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    background-color: rgb(207, 17, 17);
+    border-radius: 8px;
+    padding: 10px 10px 10px 10px; 
+    margin-bottom: 30px;      
+    justify-content: center;
+    
+}
+
+button#inicio:hover{
+    cursor: pointer;
+    background-color: rgb(219, 159, 29);
+
+}
+
+h2{
+    color: rgb(6, 59, 17);
+    font-family: 'Montserrat', sans-serif;
+    display: inline;
+    padding: 5px 5px 5px 5px;
+    border-radius: 8px;
+    text-transform: uppercase;
+    
+}
+
+div#imagensmapas{
+    text-align: center;
+
+}
+
+div#imagens1{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    flex-grow: 1;
+    justify-content: center;      
+    align-items: baseline; 
+    align-content: center;   
+    
+}
+
+div#imagens2{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    flex-grow: 1;
+    justify-content: center;      
+    align-items: baseline; 
+    align-content: center;
+}
+
+div#imagens3{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    flex-grow: 1;
+    justify-content: center;      
+    align-items: baseline; 
+    align-content: center;      
+}
+
+div#imagens4{
+    display: flex;
+    flex-wrap: wrap;
+    align-self: flex-end;
+    flex-grow: 1;
+    justify-content: center;      
+    align-items: baseline; 
+    align-content: center;      
+}
+
+#subir {
+    background-color: #05177cd0;
+    border-radius: 10px;
+    bottom: 14px;
+    box-shadow: 2px 3px 19px -2px rgba(0, 0, 0, 0.75);
+    color: white;
+    cursor: pointer;
+    height: 40px;
+    position: fixed;
+    right: 22px;
+    width: 55px;
+    z-index: 3;    
+    display: flex;
+    justify-content: center;
+    padding: 10px 10px 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18pt;
+    text-align: center;
+    animation: slidein;
+    animation-duration: 2s;
+    
+}
