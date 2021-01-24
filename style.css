@@ -1,30 +1,21 @@
 body{
-    background-color:rgba(30, 112, 57, 0.603);
+    background: url(bg.jpg);
     font-family: 'Montserrat', sans-serif;
     font-size: 16px; 
     text-align: justify; 
     align-items: center;    
 }
 
-header{
-    background: url(bg.jpg);
-    border-radius: 10px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    margin-bottom: 30px;
-    border:1px solid black;   
-    
-    
-}
-
+/*Botão Mapas no Cabeçalho--------------------------------------------------------------------------------*/
 button#mapas{
     color:white;
     font-family: 'Montserrat', sans-serif;
-    font-size: 18px;
+    font-size: 20px;
     background-color: rgb(212, 18, 18);
     border-radius: 8px;
-    padding: 5px 5px 5px 5px;
+    padding: 20px 20px;
     margin-left: 5px;
+    box-shadow: 1px 1px 1px 1px rgba(26, 25, 25, 0.808);
     
 }
 
@@ -32,6 +23,18 @@ button#mapas:hover{
     cursor: pointer;
     background-color: rgba(18, 112, 41, 0.993);
 
+}
+
+/*Cabeçalho--------------------------------------------------------------------------------*/
+header{        
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-bottom: 30px;       
+    display: grid;
+    flex-wrap: wrap;
+    flex-direction: row;    
+    
+    
 }
 
 h1{
@@ -45,42 +48,49 @@ h1{
     animation-duration: 5s;
     animation-name: fade;          
     border: 1px solid black;
-    background-color: rgba(43, 63, 51, 0.774);
-    
+    background-color: rgba(18, 112, 42, 0.897);
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 1px 1px 1px 1px rgba(26, 25, 25, 0.808);    
 }
 
 div#flag{
-    display:flex;
-    flex-direction: column;
+    display: flex;
     align-items: center;
+    justify-content: center;        
     margin-bottom: 30px;  
     animation-duration: 3s;
-    animation-name: slidein;    
-          
+    animation-name: slidein;              
 }
 
 h2{
     font-style: bold;
 }
 
+/*Menu--------------------------------------------------------------------------------*/
 div#menu{    
     display: flex;
-    justify-content: space-evenly; 
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    overflow-x: auto;    
+        
     margin-top: 60px; 
-    margin-bottom: 40px;    
+    margin-bottom: 40px;   
+    text-align: center; 
    
 }
 
 button#info{
     color:white;
-    background-color: rgb(4, 39, 194);
-    box-shadow: 1px 1px 1px 1px black;
-    border-radius: 10px;
-    display: grid;
-    align-items: center;
+    background-color: rgb(4, 39, 194, 0.897);
+    box-shadow: 1px 1px 1px 1px rgba(26, 25, 25, 0.808);
+    border-radius: 8px;      
     font-family: 'Montserrat', sans-serif;
     font-size: 25pt;
     text-align: center; 
+    display: grid; 
+    align-items: center;
     height: 300px;
     width: 250px;
     margin-bottom: 30px;  
@@ -95,14 +105,14 @@ button#info:hover{
 
 button#food{
     color:white;
-    background-color: rgb(4, 39, 194);
-    box-shadow: 1px 1px 1px 1px black;
-    border-radius: 10px;
-    display: grid; 
-    align-items: center;
+    background-color: rgb(4, 39, 194, 0.897);
+    box-shadow: 1px 1px 1px 1px rgba(26, 25, 25, 0.808);
+    border-radius: 8px;    
     font-family: 'Montserrat', sans-serif;
     font-size: 25pt;
     text-align: center; 
+    display: grid; 
+    align-items: center;
     height: 300px;
     width: 250px;
     margin-bottom: 30px;   
@@ -117,14 +127,14 @@ button#food:hover{
 
 button#cult{
     color:white;
-    background-color:rgb(4, 39, 194);  
-    box-shadow: 1px 1px 1px 1px black;
-    border-radius: 10px;
-    display: grid; 
-    align-items: center;
+    background-color:rgb(4, 39, 194, 0.897);  
+    box-shadow: 1px 1px 1px 1px rgba(26, 25, 25, 0.808);
+    border-radius: 8px;    
     font-family: 'Montserrat', sans-serif;
     font-size: 25pt;
     text-align: center; 
+    display: grid; 
+    align-items: center;
     height: 300px;
     width: 250px;
     margin-bottom: 30px;    
@@ -139,14 +149,14 @@ button#cult:hover{
 
 button#poleco{
     color:white;
-    background-color: rgb(4, 39, 194);
-    box-shadow: 1px 1px 1px 1px black;
-    border-radius: 10px;
+    background-color: rgb(4, 39, 194, 0.897);
+    box-shadow: 1px 1px 1px 1px rgba(26, 25, 25, 0.808);
+    border-radius: 8px;
     display: grid; 
     align-items: center;
     font-family: 'Montserrat', sans-serif;
     font-size: 25pt;
-    text-align: center; 
+    text-align: center;     
     height: 300px;
     width: 250px;
     margin-bottom: 30px;    
@@ -159,19 +169,27 @@ button#poleco:hover{
     background-color: rgba(224, 94, 19, 0.993);
 }
 
+/*Rodapé--------------------------------------------------------------------------------*/
 footer{
     text-align: center; 
     font-family: 'Montserrat', sans-serif;
 }
 
 div#som{
-    background-color:rgba(43, 63, 51, 0.568);
-    padding: 10px 10px 10px 10px;
+    background-color:rgba(18, 112, 42, 0.897);
+    padding: 5px 5px 5px 5px;
     display: inline-block;
     border-radius: 8px;
-    border:1px solid black;   
+    border:1px solid black;  
+    box-shadow: 1px 1px 1px 1px rgba(26, 25, 25, 0.808);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16pt; 
+    align-items: center;
+    
+    
 }
 
+/*Animações--------------------------------------------------------------------------------*/
 @keyframes slidein {
     from {
         margin-left: 100%;
@@ -187,3 +205,10 @@ div#som{
     from { opacity: 0; }
     to   { opacity: 1; }
   }
+
+  /*Responsividade--------------------------------------------------------------------------------*/
+  @media (min-width: 800px) {
+    html{
+        font-size: 87.5%;
+    }    
+}

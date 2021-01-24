@@ -88,6 +88,7 @@ div#imagens4{
     align-content: center;      
 }
 
+/*Botão Topo--------------------------------------------------------------------------------*/
 #subir {
     background-color: #05177cd0;
     border-radius: 10px;
@@ -109,4 +110,11 @@ div#imagens4{
     animation: slidein;
     animation-duration: 2s;
     
+}
+
+/*Responsividade--------------------------------------------------------------------------------*/
+@media (min-width: 800px) {
+    html{
+        font-size: 87.5%;
+    }    
 }
