@@ -4,52 +4,90 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="favicon.png" rel="icon"/>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">   
-    <link rel="stylesheet" href="style.css">
+    <link href="./img/favicon.png" rel="icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">   
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="http://cdn.static.w3big.com/libs/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css" />
 
-    <title>Itália</title>   
+    <title>Nostra Itália</title>   
     
 </head>
 <header>
-    <a href="mapas.html" rel="next" target="_self">
-    <button id="mapas" type="button">Clique para ver os mapas da Itália</button>
-    </a>      
 
-    <h1>Conheça a Itália e se apaixone! ❤️</h1>
-    <div id=flag><img src="gifband.gif"/></div>
-    
+    <a href="./index.html" id="nostra"><img src="./img/gifband.gif" id="flag" width="50" height="50"> Nostra Itália </a>   
+
 </header>
 <body>
 
-<div id="menu">
+    <div class="container">
 
-    <button id="info">Informações Gerais
-        <a href="info.html"><img src="mapa.png"/></a>
-    </button>
+        <div id="texto">
+            <h2> Conheça esse país maravilhoso e se apaixone! ❤️ </h2>
+            <p>A Itália é um país europeu localizado no sul do continente, seu território é banhado pelo mar Mediterrâneo.</br>
+            É um país extremamente rico em história e cultura, e atrai muitos turistas. </p>
+        </div>    
 
-    <button id="food">Culinária
-        <a href="food.html"><img src="comida.png"/></a>
-    </button>
+    <a href="./mapas.html" rel="next" target="_self">
+        <button id="mapas" type="button">Mapas da Itália</button>
+    </a>      
     
-    <button id="cult">Cultura
-        <a href="cult.html"><img src="arte.png"/></a>
-    </button>
+    <div class="menu">    
+        <a href="info.html" id="buttons1"><img src="./img/mapa.png" id="img" width="100" height="100" title="Informações"></a>  
+        <a href="food.html" id="buttons1"><img src="./img/comida.png" id="img" width="100" height="100" title="Culinária"></a>
+    </div>
 
-    <button id="poleco">Economia
-        <a href="poleco.html"><img src="euro.png"/></a>
-    </button>
+    <div class="menu">       
+        <a href="cult.html" id="buttons2"><img src="./img/arte.png" id="img" width="100" height="100" title="Cultura"></a>    
+        <a href="poleco.html" id="buttons2"><img src="./img/euro.png" id="img" width="100" height="100" title="Economia e Política"></a>   
+    </div>   
     
-</div>
+
 
 <footer>
-    <div id="som">
-        <h3>Ouça a tradicional Tarantella 🎵</h3>
-        <audio src="music.mp4" controls>Fonte: https://www.youtube.com/watch?v=EW6eLiP1-Zs</audio>        
-    </div>             
+    <div id="som"><hr>
+        <h3>🎵 Tarantella 🎵</h3>
+        <audio src="./music.mp4" controls id="audio">Fonte: https://www.youtube.com/watch?v=EW6eLiP1-Zs</audio>        
+    </div>  
+    <div class="alert alert-info alert-dismissable">
+        <button type="button" class="close" data-dismiss="alert"
+                aria-hidden="true">
+            &times;
+        </button>
+        Para saber mais sobre as músicas italianas, <a href="https://italianismo.com.br/musica-italiana-famosa-conheca-o-top-20/" target="_blank" id="click">clique aqui!</a> 
+    </div>
+    
+</div>
+    
+    <script>
+    window.addEventListener("load", function(){
+        window.cookieconsent.initialise({
+        "palette": {
+        "popup": {
+        "background": "#216942",
+        "text": "#b2d192"
+        },
+        "button": {
+        "background": "#afed71"
+        }
+        },
+        "content": {
+        "message": "Este site usa cookies para garantir que você obtenha a melhor experiência em nosso site.",
+        "link": "Leia mais",
+        "dismiss": "Compreendo!",
+        "href": "https://gabimesquita.github.io/Site_Italia/politica-de-cookies/"
+        }
+        })});
+        </script>
+
 </footer>   
 
-<script src="script.js"></script>
+<script src="./script.js"></script>
+<script src="http://cdn.static.w3big.com/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="http://cdn.static.w3big.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js"></script>
+
 
 </body>
 </html>
