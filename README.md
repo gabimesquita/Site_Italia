@@ -10,5 +10,9 @@
 <p>Link para o site: https://gabimesquita.github.io/Site_Italia/</p>
 
 
-<img src="siteitalia.png">
+<img src="img/siteitalia.png">
+
+<img src="img/siteitalia2.png">
+
+<img src="img/siteitalia3.png">
 
