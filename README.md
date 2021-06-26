@@ -35,7 +35,7 @@ Site simples criado para portifólio próprio, com informações sobre a Itália
 
 :heavy_check_mark: Botões voltar ao topo;\
 :heavy_check_mark: Subpáginas;\
-:heavy_check_mark: Carrossel de imagens;\
+:heavy_check_mark: Carrossel de imagens;
 
 
 ## :memo: Licença ##
